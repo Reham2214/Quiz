@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 60;
+}
+
+body {
+  width: 175vh;
+  height: 100vh;
+  background: linear-gradient(184deg,#8754ff,#8E2DE2,#5d1ef1);
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 16px;
+margin: 10px;
+text-decoration: none;
+font-size: 18px;
+
+}
+/* Change the color of links on hover" هذا الايقونات الي فوق حقت الصفحةعشان اذا ضغطت عليها" */
+.nav-right:hover {
+background: linear-gradient(90deg,#4514b7,#502E9D,#8E2DE2);
+color:white;
+clip-path: polygon(0px 0px, 500px 0px, 500px 500px, 0px 500px);
+border-radius: 30px; 
+
+}
+/*for button login "تصميم شكل زر التسجيل"*/
+.login {
+margin: 10px;
+padding: -10px;
+text-align: center;
+line-height: 0px;
+color: white;
+text-transform: uppercase;
+font-family: sans-serif;
+font-size: 18px;
+font-weight:bold;
+background: linear-gradient(20deg,#4514B7,#8858b1,#8E2DE2);
+background-size: 500%;
+border-radius: 10px; 
+border: none;
+}
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+float: right;
+position: absolute;
+top: 2%;
+right: 2%;
+
+}
+/*position and style for home page"عشان ارتب صفحة الهوم "*/
+.Home{
+position: absolute;
+left: 10%;
+top: 18%;
+}
+/*modified the img in home page"مكان الصوره "*/
+.Home-right{
+position: absolute;
+left: 500px;
+margin-left: 90px;
+width:565px ;
+height: 440px;
+}
+/*modified position of home page" اضبط مكان اليسار " */
+.Home-left{
+float: left;
+top:20;
+left: 50%;
+right: 50%;
+color: white;
+}
+.heading1{
+font-family: "Roboto";
+font-weight: bold;
+font-size: 55px;
+}
+.p1{
+font-size: 20px;
+font-family: "Roboto";
+font-weight: bold;
+margin: 10px;
+color: #dcdbdb;
+}
+.getquiz{
+width: 167px;
+height: 46px;
+text-align: center;
+line-height: 30px;
+color: white;
+text-transform: uppercase;
+font-family: sans-serif;
+font-size: 18px;
+font-weight: bold;
+background: linear-gradient(20deg,#4514B7,#250b38,#8E2DE2);
+background-size: 400%;
+border-radius: 10px; 
+border: none;
+cursor: pointer;
+
+}
+.Signup{
+width: 167px;
+height: 46px;
+margin: 10px;
+text-align: center;
+line-height: 30px;
+color: white;
+text-transform: uppercase;
+font-family: sans-serif;
+font-size: 18px;
+font-weight: bold;
+background: linear-gradient(20deg,#4514B7,#250b38,#9f49ea);
+background-size: 400%;
+border-radius: 10px; 
+border: 2px solid ;
+cursor: pointer;
+}
+
+/*Finish the css of home page */
+
+/*----------------------------------------------------------------*/
+
+/* Start catoregies page */
+
+/*Make second section with style*/
+.section2{
+position: absolute;
+height: 100vh;
+width: 215.5vh;
+top: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100px;
+background: linear-gradient(184deg,#5d1ef1,#8E2DE2,#8754ff);
+border-top: 2px solid #8754ff;
+;
+}
+.section2 h1{
+position: absolute;
+top: 50px;
+font-size: 80px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+color: white;
+
+}
+.section2 a{
+position: absolute;
+bottom: 50px;
+font-size: 80px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+color: white;
+text-decoration: none;
+
+}
+
+
+/*Make a container to have a boxs*/
+.container{
+position:relative;
+display: flex;
+justify-content: center;
+align-items: center;
+/*max-width: 1200px;*/
+flex-wrap: wrap;
+padding: 40px 0 ;
+} 
+/*Make a box with style*/
+.container .card{
+position: relative;
+width: 240px;
+height: 300px;
+margin: 30px;
+box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+            inset -5px -5px 5px rgba(255,255,255,0.5),
+            5px 5px 5px rgba(0,0,0,0.05),
+            -5px -5px 5px rgba(255,255,255,0.5);
+border-radius: 15px;
+}
+
+/*Style of inner box befor hover*/
+.container .card .box{
+position: absolute;
+top: 20px;
+left: 20px;
+right: 20px;
+bottom: 20px;
+background: rgb(194, 167, 251) ;
+box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+border-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/*Style of inner box after hover*/
+.container .card:hover .box{
+transform: translateY(-50px);
+box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+background: linear-gradient(184deg,#9063fa,#9931f4,#4e06f5);
+}
+/*Modifaied the Text in box */
+.container .card .box .content{
+padding: 20px; 
+text-align: center;
+}
+/*Style of the number on the boxs*/
+.container .card .box .content h2 {
+position: absolute;
+top: 0px;
+right: 15px ;
+font-size: 40px;
+color: rgba(0,0,0,0.09);
+transition: 0.5s;
+pointer-events: none;
+}
+/*Style of the number on the boxs when hover*/
+.container .card:hover .box .content h2 {
+color: rgba(251, 249, 249, 0.2);
+top:10px;
+font-size: 30px;
+}
+/*Style of the heading before hover*/
+.container .card .box .content h3 {
+font-family: sans-serif;
+font-size: 24px;
+font-weight: 600;
+margin-bottom: 8px;
+color: #33079a;
+
+}
+/*Style of the heading after hover*/
+.container .card:hover .box .content h3 {
+font-size:24px ;
+color: #ece8f3;
+margin-bottom: 10px;
+z-index: 1;
+transition: 0.05s;
+}
+/*Style of the paragraph before hover*/
+.container .card .box .content p {
+font-size:16px ;
+color: #483e61;
+transition: 0.05s;
+}
+/*Style of the paragraph after hover*/
+.container .card:hover .box .content p {
+font-size:16px ;
+margin: 10px;
+color: #bdb9c8;
+transition: 0.05s;
+}
+/*Make button for get quiz in caterogies section*/
+#getquiz{
+width: 167px;
+height: 46px;
+text-align: center;
+line-height: 30px;
+color: white;
+text-transform: uppercase;
+font-family: sans-serif;
+font-size: 24px;
+font-weight: bold;
+background: linear-gradient(20deg,#4514B7,#250b38,#8E2DE2);
+background-size: 400%;
+border-radius: 10px; 
+border: none;
+cursor: pointer;
+margin-top: 15px;
+}
+
+/*Finish the css of catoregies page */
+
+/*----------------------------------------------------------------*/
+
+
+/*Start css footer */
+
+
+
+footer{
+position: absolute;
+top: 200%;
+}
+.footer-distributed{
+background: linear-gradient(184deg,#2c097d,#5e1ff2,#7e03e9);
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+height: 50%;
+width: 100%;
+font: bold 16px sans-serif;
+text-align: center;
+padding: 50px 60px 40px;
+overflow: hidden;
+}
+
+/* Footer center */
+
+.footer-distributed .footer-center{
+float: center;
+}
+
+/* The company logo */
+.footer-distributed img{
+position:absolute;
+top: 0%;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+position: absolute;
+top: 60%;
+left: 50%;
+color:  #ffffff;
+margin: 0 0 10px;
+padding: 0;
+
+}
+
+.footer-distributed .footer-links a{
+display:inline-block;
+line-height: 1.8;
+text-decoration: none;
+color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+position: absolute;
+top: 70%;
+left:50%;
+color:  #8f9296;
+font-size: 14px;
+font-weight: normal;
+margin: 0;
+}
+
+/* Footer social icons */
+.footer-distributed .footer-icons{
+position: absolute;
+padding: 5px;
+top: 68%;
+left: 50%;
+margin-top: 30px;
+}
+.footer-distributed .footer-icons img{
+position: absolute;
+display: inline-block;
+width: 26px;
+height: 26px;
+top: 10px;
+}
+
+.footer-distributed .footer-icons a{
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+background-color:  #ff2fa5;
+border-radius: 8px;
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+line-height: 35px;
+margin-right: 8px;
+margin-bottom: 5px;
+}
+

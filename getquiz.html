@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styleGetquiz.css">
+
+    <title>Quiz</title>
+</head>
+
+<body>
+    <!-- Further code here -->
+    <div class="start-screen">
+        <img src="BBlogo⁩.png" alt="" width="400px">
+        <h1>Let's have a brain challenge</h1>
+        <!--<label for="category">Select a Quiz Category:</label>-->
+        <h4>Select a Quiz Category:</h4>
+    <select id="category">
+        <option  value="general">General Knowledge</option>
+        <option value="Computer">Computer</option>
+      <option value="science">Science</option>
+      <option value="history">History</option>
+      <option value="beauty">Beauty</option>
+    </select>
+        <button id="start-button">Start</button>
+    </div>
+    <div id="display-container">
+        <div class="header">
+            <div class="number-of-count">
+                <span class="number-of-question">1 of 3 questions</span>
+            </div>
+            <div class="timer-div">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/stopwatch-icon.png"
+                    width="20px" />
+                <span class="time-left">10s</span>
+            </div>
+        </div>
+        <div id="container">
+            <!-- questions and options will be displayed here -->
+        </div>
+        <button id="next-button">Next</button>
+    </div>
+    <div class="score-container hide">
+        <img src="score.png" alt="">
+        <div id="user-score">Demo Score</div>
+        <button id="restart">Restart</button>
+        <a href="H.html"><button id="Home">Home</button></a>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
